@@ -19,10 +19,10 @@ func main() {
 	if host != "" {
 		c.ConnectionHost = host
 	}
-	banUnitTpStatus, err := c.QueryMailDetail("44261122507318")
+	result, err := c.QueryMailDetail("44261122507318")
 	if err != nil {
 		fmt.Println(err)
 		return
 	}
-	fmt.Println("status:", banUnitTpStatus)
+	fmt.Println("status:", result)
 }
